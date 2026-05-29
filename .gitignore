@@ -1,0 +1,61 @@
+# Dependencies
+FaceGuardOffline/node_modules/
+FaceGuardOffline/venv
+
+# React Native
+FaceGuardOffline/.expo/
+FaceGuardOffline/.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Android
+FaceGuardOffline/android/app/build/
+FaceGuardOffline/android/.gradle/
+FaceGuardOffline/android/local.properties
+FaceGuardOffline/android/app/debug/
+FaceGuardOffline/android/app/release/
+
+# iOS
+FaceGuardOffline/ios/Pods/
+FaceGuardOffline/ios/build/
+FaceGuardOffline/ios/DerivedData/
+FaceGuardOffline/ios/*.xcworkspace/xcuserdata/
+
+# Build outputs
+FaceGuardOffline/build/
+FaceGuardOffline/dist/
+
+# Models (large binary files — see README for download instructions)
+# FaceGuardOffline/assets/models/*.tflite
+# FaceGuardOffline/assets/models/*.task
+# FaceGuardOffline/assets/models/*.onnx
+
+# Environment / secrets
+FaceGuardOffline/.env
+FaceGuardOffline/.env.*
+!FaceGuardOffline/.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Metro
+FaceGuardOffline/.metro-health-check*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.agents/
+.codex/
+.claude/

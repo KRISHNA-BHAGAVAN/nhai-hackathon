@@ -1,0 +1,1 @@
+{"nodes": [{"id": "constants_appconfig_app_config", "label": "APP_CONFIG (S3, SYNC, DB, RECOGNITION, CAMERA settings)", "file_type": "code", "source_file": "FaceGuardOffline/src/constants/AppConfig.ts", "source_location": "line 1", "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

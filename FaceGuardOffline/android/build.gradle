@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 26
+        compileSdkVersion = 35
+        targetSdkVersion = 34
+        ndkVersion = "27.1.12297006"
+        kotlinVersion = "1.9.24"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.3.2")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
+
+allprojects {
+    // Force all subprojects to use the same NDK version — prevents
+    // subprojects without explicit ndkVersion from triggering SDK manager downloads
+    plugins.withId("com.android.library") {
+        android {
+            ndkVersion rootProject.ext.ndkVersion
+        }
+    }
+}

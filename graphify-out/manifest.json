@@ -1,0 +1,312 @@
+{
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/package.json": {
+    "mtime": 1779954277.9906235,
+    "ast_hash": "3ced735000e7b878f762e55216867c06",
+    "semantic_hash": "3ced735000e7b878f762e55216867c06"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/tsconfig.json": {
+    "mtime": 1779949538.7695715,
+    "ast_hash": "95a22a7cae431325168cdb279209ff01",
+    "semantic_hash": "95a22a7cae431325168cdb279209ff01"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/babel.config.js": {
+    "mtime": 1779949542.8757741,
+    "ast_hash": "7ae822019e3f316032cdacd8dd50a6c2",
+    "semantic_hash": "7ae822019e3f316032cdacd8dd50a6c2"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/jest.setup.js": {
+    "mtime": 1779949550.1111314,
+    "ast_hash": "cc7d7a692cb5a7e6883868d622dab8bb",
+    "semantic_hash": "cc7d7a692cb5a7e6883868d622dab8bb"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/index.js": {
+    "mtime": 1779954423.0929935,
+    "ast_hash": "663b5e0a8dacca29ce71f555c7dbbeec",
+    "semantic_hash": "663b5e0a8dacca29ce71f555c7dbbeec"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/metro.config.js": {
+    "mtime": 1779949533.542314,
+    "ast_hash": "862b0561d1742a30c2d97b5e7367307f",
+    "semantic_hash": "862b0561d1742a30c2d97b5e7367307f"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/app.json": {
+    "mtime": 1779954419.6459594,
+    "ast_hash": "ce074559951c124136b8de23b1d3ce01",
+    "semantic_hash": "ce074559951c124136b8de23b1d3ce01"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/settings.gradle": {
+    "mtime": 1779975776.5241706,
+    "ast_hash": "51f40e1048ca39fa7d3e30cb6f91e845",
+    "semantic_hash": "51f40e1048ca39fa7d3e30cb6f91e845"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/build.gradle": {
+    "mtime": 1779976280.5702736,
+    "ast_hash": "ed422054be48009d74332006c3a68ecc",
+    "semantic_hash": "ed422054be48009d74332006c3a68ecc"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/gradlew": {
+    "mtime": 1779974345.9128728,
+    "ast_hash": "1db6d150e9a9442ca929c1fa8b2fd25e",
+    "semantic_hash": "1db6d150e9a9442ca929c1fa8b2fd25e"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/build.gradle": {
+    "mtime": 1779975806.4543746,
+    "ast_hash": "adf28962321a4a2288cf76551db50f49",
+    "semantic_hash": "adf28962321a4a2288cf76551db50f49"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/java/com/faceguardoffline/MainActivity.kt": {
+    "mtime": 1779952225.9146197,
+    "ast_hash": "c5c558bbd2d248995082dd104a34b7e2",
+    "semantic_hash": "c5c558bbd2d248995082dd104a34b7e2"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/java/com/faceguardoffline/MainApplication.kt": {
+    "mtime": 1779952231.9937801,
+    "ast_hash": "74fc6ebad078316baea149b6faedb3e2",
+    "semantic_hash": "74fc6ebad078316baea149b6faedb3e2"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/__tests__/attendanceRepository.test.ts": {
+    "mtime": 1779953028.7948704,
+    "ast_hash": "1e03ece69138a73d7d4c6def7ac8be3f",
+    "semantic_hash": "1e03ece69138a73d7d4c6def7ac8be3f"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/__tests__/embedding.test.ts": {
+    "mtime": 1779952962.4929008,
+    "ast_hash": "df7a1daa1856246877753649f0768e0f",
+    "semantic_hash": "df7a1daa1856246877753649f0768e0f"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/__tests__/preprocessor.test.ts": {
+    "mtime": 1779969096.2115476,
+    "ast_hash": "dcecfdbfec31285a1ecbba96f0918f48",
+    "semantic_hash": "dcecfdbfec31285a1ecbba96f0918f48"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/hooks/useFacePipeline.ts": {
+    "mtime": 1779950302.1902905,
+    "ast_hash": "f18e32ea0f5284cd849f11a1a43da61e",
+    "semantic_hash": "f18e32ea0f5284cd849f11a1a43da61e"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/hooks/useLivenessChallenge.ts": {
+    "mtime": 1779950314.8829722,
+    "ast_hash": "e5d72e66ed4bd3f262338adb19152cca",
+    "semantic_hash": "e5d72e66ed4bd3f262338adb19152cca"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/hooks/useNetworkSync.ts": {
+    "mtime": 1779950322.879402,
+    "ast_hash": "8b71456787139e5213ea0acbc9b8f8a2",
+    "semantic_hash": "8b71456787139e5213ea0acbc9b8f8a2"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/components/CameraView.tsx": {
+    "mtime": 1779950397.2091696,
+    "ast_hash": "f0832aa3293b123b294d6ef9d1bb6f3a",
+    "semantic_hash": "f0832aa3293b123b294d6ef9d1bb6f3a"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/components/RecognitionResult.tsx": {
+    "mtime": 1779950481.7401192,
+    "ast_hash": "72023e8b25cf2587094fa8b16fafc547",
+    "semantic_hash": "72023e8b25cf2587094fa8b16fafc547"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/components/FaceOverlay.tsx": {
+    "mtime": 1779950426.7045286,
+    "ast_hash": "0729034c667280b52a9f2b97f367c252",
+    "semantic_hash": "0729034c667280b52a9f2b97f367c252"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/components/ConfidenceBar.tsx": {
+    "mtime": 1779950514.6217835,
+    "ast_hash": "a22ad7853774f4b4c414adc67f5d2f17",
+    "semantic_hash": "a22ad7853774f4b4c414adc67f5d2f17"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/components/LivenessChallenge.tsx": {
+    "mtime": 1779950460.6957288,
+    "ast_hash": "c6c0fd13a000757cf8cd04c937d41b62",
+    "semantic_hash": "c6c0fd13a000757cf8cd04c937d41b62"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/components/SyncStatusBadge.tsx": {
+    "mtime": 1779950502.9765863,
+    "ast_hash": "f8641ac653b03564f9a696e261b7234f",
+    "semantic_hash": "f8641ac653b03564f9a696e261b7234f"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/db/Database.ts": {
+    "mtime": 1779950095.545255,
+    "ast_hash": "47d64755a15c7080967b5e37471071f7",
+    "semantic_hash": "47d64755a15c7080967b5e37471071f7"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/db/AttendanceRepository.ts": {
+    "mtime": 1779950127.26594,
+    "ast_hash": "ad3419da9d2b8ad2d1e049b423f447d8",
+    "semantic_hash": "ad3419da9d2b8ad2d1e049b423f447d8"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/db/EmployeeRepository.ts": {
+    "mtime": 1779950109.5349977,
+    "ast_hash": "974067c04ceff927bdfef841afd4a35e",
+    "semantic_hash": "974067c04ceff927bdfef841afd4a35e"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/types/index.ts": {
+    "mtime": 1779949629.706098,
+    "ast_hash": "e7659bfcd2ac75f888a136a47ec457f4",
+    "semantic_hash": "e7659bfcd2ac75f888a136a47ec457f4"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/utils/embedding.ts": {
+    "mtime": 1779949681.0946908,
+    "ast_hash": "b8b1aeecc974554af7448c88ea48462b",
+    "semantic_hash": "b8b1aeecc974554af7448c88ea48462b"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/utils/imageUtils.ts": {
+    "mtime": 1779949692.7162802,
+    "ast_hash": "cc14b691304d61241985bd4685f4274c",
+    "semantic_hash": "cc14b691304d61241985bd4685f4274c"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/utils/crypto.ts": {
+    "mtime": 1779949700.7636893,
+    "ast_hash": "48cffd214117899f5c65ae9ffb817e51",
+    "semantic_hash": "48cffd214117899f5c65ae9ffb817e51"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/navigation/AppNavigator.tsx": {
+    "mtime": 1779950600.2456384,
+    "ast_hash": "802190dbdd4d9a27b9a8d61f60d05379",
+    "semantic_hash": "802190dbdd4d9a27b9a8d61f60d05379"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/sync/S3Uploader.ts": {
+    "mtime": 1779950196.241616,
+    "ast_hash": "ee606711f02b36c45f6074ce9a17e491",
+    "semantic_hash": "ee606711f02b36c45f6074ce9a17e491"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/sync/SyncService.ts": {
+    "mtime": 1779950216.2716863,
+    "ast_hash": "1d1c94677c0f920c0e6a6e1374770972",
+    "semantic_hash": "1d1c94677c0f920c0e6a6e1374770972"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/constants/ModelConfig.ts": {
+    "mtime": 1779969021.6288044,
+    "ast_hash": "7549db3db267b116aa088ae94dd63e28",
+    "semantic_hash": "7549db3db267b116aa088ae94dd63e28"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/constants/AppConfig.ts": {
+    "mtime": 1779949622.2407234,
+    "ast_hash": "92a06d14f6651bef13bf950c7081feff",
+    "semantic_hash": "92a06d14f6651bef13bf950c7081feff"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/ml/FaceDetector.ts": {
+    "mtime": 1779949892.4435658,
+    "ast_hash": "8836bf7cae978f7370ad3760a068b545",
+    "semantic_hash": "8836bf7cae978f7370ad3760a068b545"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/ml/Preprocessor.ts": {
+    "mtime": 1779969079.8543804,
+    "ast_hash": "d64787aa68977ee945451452f48d21d4",
+    "semantic_hash": "d64787aa68977ee945451452f48d21d4"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/ml/LivenessDetector.ts": {
+    "mtime": 1779949995.9269886,
+    "ast_hash": "1ddf9bbca332010fb19d106f9581f313",
+    "semantic_hash": "1ddf9bbca332010fb19d106f9581f313"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/ml/FaceRecogniser.ts": {
+    "mtime": 1779949904.6632032,
+    "ast_hash": "75aa602435490c0da8cb56c224007d57",
+    "semantic_hash": "75aa602435490c0da8cb56c224007d57"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/ml/FacePipeline.ts": {
+    "mtime": 1779950024.066472,
+    "ast_hash": "3673a90b043a8ec29b5fdadb0641fe1c",
+    "semantic_hash": "3673a90b043a8ec29b5fdadb0641fe1c"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/screens/RecognitionScreen.tsx": {
+    "mtime": 1779951733.4297872,
+    "ast_hash": "fb9ae7246aa5d44d952a1d41d508dd33",
+    "semantic_hash": "fb9ae7246aa5d44d952a1d41d508dd33"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/screens/SplashScreen.tsx": {
+    "mtime": 1779950640.1926558,
+    "ast_hash": "212855e39958e7172fce3c2bc5b3bca4",
+    "semantic_hash": "212855e39958e7172fce3c2bc5b3bca4"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/screens/HomeScreen.tsx": {
+    "mtime": 1779950672.6202223,
+    "ast_hash": "f6051df8f8e59e6c37314b614890414b",
+    "semantic_hash": "f6051df8f8e59e6c37314b614890414b"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/screens/AttendanceLogScreen.tsx": {
+    "mtime": 1779952010.2471132,
+    "ast_hash": "53c87a6a68a8d3e9859f6b46b4138f22",
+    "semantic_hash": "53c87a6a68a8d3e9859f6b46b4138f22"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/screens/SettingsScreen.tsx": {
+    "mtime": 1779952116.863787,
+    "ast_hash": "c3b83d4ea9dda0624f271c9e1c105789",
+    "semantic_hash": "c3b83d4ea9dda0624f271c9e1c105789"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/src/screens/EnrollmentScreen.tsx": {
+    "mtime": 1779951957.6868367,
+    "ast_hash": "a6bb9feebb3ebdc9a6f1fdc279236840",
+    "semantic_hash": "a6bb9feebb3ebdc9a6f1fdc279236840"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/ios/FaceGuardOffline/AppDelegate.swift": {
+    "mtime": 1779952341.5517108,
+    "ast_hash": "3bfa6aa1159e1d85fff1c34e62f6e649",
+    "semantic_hash": "3bfa6aa1159e1d85fff1c34e62f6e649"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/assets/models/best_model_quantized_tensor_correspondence_report.json": {
+    "mtime": 1779973568.802602,
+    "ast_hash": "1bee2131a9272584e68e0cd55595f9ad",
+    "semantic_hash": "1bee2131a9272584e68e0cd55595f9ad"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/README.md": {
+    "mtime": 1779969407.0450969,
+    "ast_hash": "065d31c6fa1fc712196dd448eadb2f2c",
+    "semantic_hash": "065d31c6fa1fc712196dd448eadb2f2c"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/ios/README_XCODEPROJ.md": {
+    "mtime": 1779952351.5889828,
+    "ast_hash": "b8720d13d578e69ffb0ae2e71ee1c960",
+    "semantic_hash": "b8720d13d578e69ffb0ae2e71ee1c960"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png": {
+    "mtime": 1779974401.8689766,
+    "ast_hash": "5a4b3e0b53eae065fff672aa4826aa85",
+    "semantic_hash": "5a4b3e0b53eae065fff672aa4826aa85"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-mdpi/ic_launcher.png": {
+    "mtime": 1779974401.8659763,
+    "ast_hash": "3f9aaf70b3e144d576b065f053d99962",
+    "semantic_hash": "3f9aaf70b3e144d576b065f053d99962"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png": {
+    "mtime": 1779974401.8879778,
+    "ast_hash": "250b231d6a4989ba507ae9b02db6b0dd",
+    "semantic_hash": "250b231d6a4989ba507ae9b02db6b0dd"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "mtime": 1779974401.8859777,
+    "ast_hash": "529bfacc3678dee05f8b0eb0ca0a0f96",
+    "semantic_hash": "529bfacc3678dee05f8b0eb0ca0a0f96"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png": {
+    "mtime": 1779974401.875977,
+    "ast_hash": "4cfea330328c6d01709e4ebc2424858a",
+    "semantic_hash": "4cfea330328c6d01709e4ebc2424858a"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+    "mtime": 1779974401.8729768,
+    "ast_hash": "f5b91ea2d6be8be772010065f9dc1c8f",
+    "semantic_hash": "f5b91ea2d6be8be772010065f9dc1c8f"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png": {
+    "mtime": 1779974401.8819776,
+    "ast_hash": "3b83d51d2253266ab4b1ace9af265e6e",
+    "semantic_hash": "3b83d51d2253266ab4b1ace9af265e6e"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+    "mtime": 1779974401.8799772,
+    "ast_hash": "7c297b3cf4de675ebeb2b65e031188be",
+    "semantic_hash": "7c297b3cf4de675ebeb2b65e031188be"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png": {
+    "mtime": 1779974401.861976,
+    "ast_hash": "20ccd3ed0e1f2ad24bb23bbe446bb3c4",
+    "semantic_hash": "20ccd3ed0e1f2ad24bb23bbe446bb3c4"
+  },
+  "/home/krishna/nhai-hackathon/FaceGuardOffline/android/app/src/main/res/mipmap-hdpi/ic_launcher.png": {
+    "mtime": 1779974401.8599758,
+    "ast_hash": "39370f3d8346edf24af4d811c7d6f70e",
+    "semantic_hash": "39370f3d8346edf24af4d811c7d6f70e"
+  }
+}

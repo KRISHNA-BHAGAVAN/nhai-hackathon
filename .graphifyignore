@@ -1,0 +1,22 @@
+# node_modules — JS dependency tree (huge, not app code)
+node_modules/
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Upstream face anti-spoof reference repo (not our app code)
+face-antispoof-onnx/
+
+# Python files (app is TypeScript/Kotlin/Java; Python only in tooling)
+*.py
+
+# Android Gradle caches and generated files (not authored code)
+.gradle/
+
+# graphify output directory itself
+graphify-out/
+
+# Claude local settings
+.claude/
