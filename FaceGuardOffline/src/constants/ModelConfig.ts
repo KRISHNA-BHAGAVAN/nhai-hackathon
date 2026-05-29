@@ -1,6 +1,6 @@
 export const MODELS = Object.freeze({
   BLAZEFACE: {
-    path: require('../../assets/models/blazeface.tflite'),
+    path: require('../../assets/models/blaze_face_short_range.tflite'),
     inputWidth: 128,
     inputHeight: 128,
     scoreThreshold: 0.75,

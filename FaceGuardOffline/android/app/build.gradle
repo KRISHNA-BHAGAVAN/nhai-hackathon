@@ -67,11 +67,6 @@ dependencies {
     implementation("com.facebook.react:react-android")
     implementation("com.facebook.react:hermes-android")
 
-    // TFLite
-    implementation "org.tensorflow:tensorflow-lite:2.14.0"
-    implementation "org.tensorflow:tensorflow-lite-gpu:2.14.0"
-    implementation "org.tensorflow:tensorflow-lite-support:0.4.4"
-
     // MultiDex
     implementation "androidx.multidex:multidex:2.0.1"
 }
