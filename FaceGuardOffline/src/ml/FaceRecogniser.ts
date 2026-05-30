@@ -41,7 +41,7 @@ export class FaceRecogniser {
       const { pixels, width, height } = extractFramePixels(frame);
       const prepared = prepareFaceForMobileFaceNet(pixels, bbox, width, height);
 
-      const outputs = this.model.run([prepared]);
+      const outputs = this.model.runSync([prepared]);
       const rawVector = outputs[0] as Float32Array;
 
       const normalised = l2Normalize(rawVector);

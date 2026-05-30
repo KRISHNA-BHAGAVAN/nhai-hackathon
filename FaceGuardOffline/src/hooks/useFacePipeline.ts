@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useFrameProcessor } from 'react-native-vision-camera';
-import { runOnJS } from 'react-native-reanimated';
+import { Worklets } from 'react-native-worklets-core';
 import { Frame } from 'react-native-vision-camera';
 import { Employee, PipelineResult } from '../types';
 import { FacePipeline } from '../ml/FacePipeline';
@@ -56,16 +56,24 @@ export function useFacePipeline(employees: Employee[]): {
   }, []);
 
   const processFrameOnJS = useCallback((frame: Frame) => {
-    if (!_pipeline || processingRef.current) return;
+    if (!_pipeline || processingRef.current) {
+      frame.decrementRefCount();
+      return;
+    }
     processingRef.current = true;
     _pipeline
       .processFrame(frame, _employees)
       .then((result) => {
         setPipelineResult(result);
-        processingRef.current = false;
       })
-      .catch(() => {
+      .catch((err) => {
+        if (__DEV__) {
+          console.error('processFrameOnJS error:', err);
+        }
+      })
+      .finally(() => {
         processingRef.current = false;
+        frame.decrementRefCount();
       });
   }, []);
 
@@ -75,10 +83,14 @@ export function useFacePipeline(employees: Employee[]): {
     processingRef.current = false;
   }, []);
 
+  // createRunOnJS dispatches back to the JS thread from VisionCamera's worklet runtime
+  const runProcessFrameOnJS = Worklets.createRunOnJS(processFrameOnJS);
+
   const frameProcessor = useFrameProcessor((frame) => {
     'worklet';
-    runOnJS(processFrameOnJS)(frame);
-  }, [processFrameOnJS]);
+    frame.incrementRefCount();
+    runProcessFrameOnJS(frame);
+  }, [runProcessFrameOnJS]);
 
   return { frameProcessor, pipelineResult, isReady, reset };
 }

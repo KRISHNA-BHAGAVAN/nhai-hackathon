@@ -89,7 +89,7 @@ export class FaceDetector {
       }
 
       // Run inference
-      const outputs = this.model.run([resized]);
+      const outputs = this.model.runSync([resized]);
       // BlazeFace output: boxes [1, 896, 4], scores [1, 896, 1]
       const boxes = outputs[0] as Float32Array;   // 896 * 4
       const scores = outputs[1] as Float32Array;  // 896 * 1

@@ -18,7 +18,7 @@ import {
   View,
 } from 'react-native';
 import { Camera, useCameraDevice, useFrameProcessor } from 'react-native-vision-camera';
-import { runOnJS } from 'react-native-reanimated';
+import { Worklets } from 'react-native-worklets-core';
 import { StackScreenProps } from '@react-navigation/stack';
 import uuid from 'react-native-uuid';
 
@@ -67,7 +67,7 @@ async function embedFromBuffer(
     _embedModel = await loadTensorflowModel(MODELS.MOBILEFACENET.path, 'default');
   }
   const prepared = prepareFaceForMobileFaceNet(pixels, bbox, width, height);
-  const outputs = _embedModel.run([prepared]);
+  const outputs = _embedModel.runSync([prepared]);
   const rawVector = outputs[0] as Float32Array;
   return l2Normalize(rawVector);
 }
@@ -89,6 +89,7 @@ export default function EnrollmentScreen({ navigation }: Props): React.JSX.Eleme
   });
 
   const successTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const processingRef = useRef(false);
 
   // ── Load models on mount ─────────────────────────────────────────────────
 
@@ -119,25 +120,56 @@ export default function EnrollmentScreen({ navigation }: Props): React.JSX.Eleme
     };
   }, []);
 
-  // ── Frame processor callback (runs on JS thread via runOnJS) ────────────────
+  // ── Frame processor callback (runs on JS thread) ──────────────────────────
 
-  const onFaceDetectedJS = useCallback(
-    (face: DetectedFace | null, pixels: Uint8Array, width: number, height: number) => {
-      setDetectedFace(face);
-      if (face !== null) {
-        _latestCapture = {
-          pixels,
-          width,
-          height,
-          bbox: face.boundingBox,
-          confidence: face.confidence,
-        };
-      } else {
-        _latestCapture = null;
+  const processEnrollmentFrameJS = useCallback(
+    (frame: Frame) => {
+      if (_enrollDetector === null || processingRef.current) {
+        frame.decrementRefCount();
+        return;
+      }
+      processingRef.current = true;
+
+      try {
+        const buffer = frame.toArrayBuffer();
+        const bytes = new Uint8Array(buffer);
+        const w = frame.width;
+        const h = frame.height;
+        const rgb = new Uint8Array(w * h * 3);
+        for (let i = 0; i < w * h; i++) {
+          rgb[i * 3] = bytes[i * 4];
+          rgb[i * 3 + 1] = bytes[i * 4 + 1];
+          rgb[i * 3 + 2] = bytes[i * 4 + 2];
+        }
+
+        const faces = _enrollDetector.detect(frame);
+        const topFace = faces.length > 0 ? faces[0] : null;
+
+        setDetectedFace(topFace);
+        if (topFace !== null) {
+          _latestCapture = {
+            pixels: rgb,
+            width: w,
+            height: h,
+            bbox: topFace.boundingBox,
+            confidence: topFace.confidence,
+          };
+        } else {
+          _latestCapture = null;
+        }
+      } catch (err) {
+        if (__DEV__) {
+          console.error('processEnrollmentFrameJS error:', err);
+        }
+      } finally {
+        processingRef.current = false;
+        frame.decrementRefCount();
       }
     },
     [],
   );
+
+  const runProcessEnrollmentFrameJS = Worklets.createRunOnJS(processEnrollmentFrameJS);
 
   // ── Frame processor (worklet) ────────────────────────────────────────────────
 
@@ -145,24 +177,10 @@ export default function EnrollmentScreen({ navigation }: Props): React.JSX.Eleme
     (frame) => {
       'worklet';
       if (_enrollDetector === null) return;
-
-      // Extract packed-RGB pixel data from the frame buffer
-      const buffer = frame.toArrayBuffer();
-      const bytes = new Uint8Array(buffer);
-      const w = frame.width;
-      const h = frame.height;
-      const rgb = new Uint8Array(w * h * 3);
-      for (let i = 0; i < w * h; i++) {
-        rgb[i * 3] = bytes[i * 4];
-        rgb[i * 3 + 1] = bytes[i * 4 + 1];
-        rgb[i * 3 + 2] = bytes[i * 4 + 2];
-      }
-
-      const faces = _enrollDetector.detect(frame);
-      const topFace = faces.length > 0 ? faces[0] : null;
-      runOnJS(onFaceDetectedJS)(topFace, rgb, w, h);
+      frame.incrementRefCount();
+      runProcessEnrollmentFrameJS(frame);
     },
-    [onFaceDetectedJS],
+    [runProcessEnrollmentFrameJS],
   );
 
   // ── Capture + enroll ─────────────────────────────────────────────────────────

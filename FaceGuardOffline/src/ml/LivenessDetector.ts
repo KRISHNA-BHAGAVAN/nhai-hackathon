@@ -50,7 +50,7 @@ export class LivenessDetector {
     try {
       const { pixels, width, height } = extractFramePixels(frame);
       const prepared = prepareFaceForMiniFASNet(pixels, bbox, width, height);
-      const outputs = this.model.run([prepared]);
+      const outputs = this.model.runSync([prepared]);
       const logits = outputs[0] as Float32Array;
       // logits[0] = real score, logits[1] = spoof score
       const [realScore] = softmax2(logits[0], logits[1]);
